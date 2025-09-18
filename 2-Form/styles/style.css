@@ -3,7 +3,12 @@ body {
 }
 
 main {
-
+background-color: #FFFEFE;
+width: 582px;  
+height: 573px;
+top: 225px;
+left: 429px;
+border-radius: 10px;
 }
 
 h1 {
@@ -15,3 +20,4 @@ h1 {
     letter-spacing: 0%;
     text-align: center;   
 }
+
