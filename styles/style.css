@@ -1,0 +1,125 @@
+
+html,body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.psychologyText {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px;
+    color: #fff;
+}
+
+.author-block {
+    margin-top: 28px;
+    
+    text-align: center;
+}
+
+.author-block img {
+    display: block;
+    margin: 0 auto;
+}
+
+.author {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.role {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.searchText {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background: #121928;
+}
+
+.title-wrap {
+        margin-top: 56px;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+.top-block,.bottom-block {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.top-block {
+    width: 100%;
+    max-width: 1440px;
+    height: 1516px;
+    position: relative;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #374151 0%, #111827 100%);
+}
+
+.bottom-block {
+    background: #121928;
+    width: 100%;
+    max-width: 1440px;
+    height: 319px;
+    margin-top: -16px;       
+}
+
+.bottom-block__content {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+  
+.heroText {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.secondText {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+        font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.nextText {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+        font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+#copyright {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
