@@ -1,8 +1,27 @@
-body {
-    background-color: #f39494;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-main {
+
+.layout {
+    width: 1440px;
+    height: 1024px;
+    background:
+        linear-gradient(180deg, #FFA5A5 0%, #FFFFFF 100%),
+        linear-gradient(135deg, #F298DE 0%, #FDC5C5 100%),
+        #F39494;
+    margin: 0 auto;
+}
+    
+    
+    
+
+
+
+/* main {
 background-color: #FFFEFE;
 width: 582px;  
 height: 573px;
@@ -20,4 +39,4 @@ h1 {
     letter-spacing: 0%;
     text-align: center;   
 }
-
+ */
