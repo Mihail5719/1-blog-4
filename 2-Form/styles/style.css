@@ -54,6 +54,48 @@
     text-align: center;
     /* для дополнительного центрирования */
 }
+
+.subtitle {
+    position: absolute;
+    top: 351px;
+    left: 602px;
+    width: 237px;
+    height: 26px;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    /* Можно скорректировать согласно макету */
+}
+
+.subtitle-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #666666;
+}
+
+.login-link {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #089FE0;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 1px;
+    /* Для видимости */
+    text-underline-offset: 0;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+   
     
     
 
