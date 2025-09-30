@@ -225,8 +225,47 @@
        opacity: 1;
    }
 
+.signup-btn {
+    position: absolute;
+    top: 622px;
+    left: 522px;
+    width: 394px;
+    height: 44px;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 
+    background: #089FE0;
+    border: 3px solid #FFFFFF;
+    border-radius: 5px;
+
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Стили для стрелки */
+.btn-arrow {
+    width: 22px;
+    /* Задайте нужную ширину */
+    height: 22px;
+    /* или 0, если только линия, скорректируйте под макет */
+    display: block;
+}
 /* main {
 background-color: #FFFEFE;
 width: 582px;  
