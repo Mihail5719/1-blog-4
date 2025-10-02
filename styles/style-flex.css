@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #111827;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.wrapper {
+    max-width: 900px;
+    /* можешь изменить под свой макет */
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    margin-top: 48px;
+    /* пространство над шапкой, меняй по макету */
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    /* расстояние между логотипом и меню */
+}
+
+.rectangle {
+    width: 35px;
+    height: 35px;
+    background: #4b5563;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.rectangle .letter {
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1;
+}
+
+.menu {
+    display: flex;
+    gap: 32px;
+    /* расстояние между пунктами меню */
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    transition: color 0.2s;
+}
+
+.menu a:hover {
+    color: #ffef75;
+}
+
+main {
+    flex: 1 0 auto;
+    margin: 48px 0;
+    /* отступы сверху и снизу между header и footer */
+}
+
+footer {
+    margin-top: 24px;
+    padding: 20px 0;
+    text-align: center;
+    background: #1f2937;
+    font-size: 14px;
+    color: #ccc;
+}
