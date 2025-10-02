@@ -18,8 +18,17 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background: #111827;
 }
 
+.top-block {
+    width: 100%;
+    min-height: 1516px;
+    background: linear-gradient(180deg, #374151 0%, #111827 100%);
+    
+    
+    /* цвет верхнего блока из макета */
+}
 header {
     margin-top: 48px;
     /* пространство над шапкой, меняй по макету */
@@ -74,6 +83,13 @@ main {
     flex: 1 0 auto;
     margin: 48px 0;
     /* отступы сверху и снизу между header и footer */
+}
+
+.bottom-block {
+    width: 100%;
+    min-height: 319px;
+    background: #1f2937;
+    /* цвет нижнего блока из макета */
 }
 
 footer {
