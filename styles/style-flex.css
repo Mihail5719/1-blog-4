@@ -30,15 +30,18 @@ body {
     /* цвет верхнего блока из макета */
 }
 header {
-    margin-top: 48px;
+    margin-top: 81px;
     /* пространство над шапкой, меняй по макету */
 }
+
 
 .header-row {
     display: flex;
     align-items: center;
-    gap: 34px;
+    gap: 11px;
     /* расстояние между логотипом и меню */
+    padding-left: 180px;
+    justify-content: space-between;
 }
 
 .rectangle {
