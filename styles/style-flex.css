@@ -34,19 +34,31 @@ header {
     /* пространство над шапкой, меняй по макету */
 }
 
-
 .header-row {
     display: flex;
     align-items: center;
-    gap: 11px;
-    /* расстояние между логотипом и меню */
     padding-left: 180px;
-    justify-content: space-between;
+    padding-right: 180px;
 }
+
+
+
+
+/* .header-row {
+    display: flex;
+    align-items: center;
+    gap: 11px; */
+    /* расстояние между логотипом и меню */
+    /* padding-left: 180px;
+    justify-content: space-between;
+} */
+
+/* Отступ между прямоугольником и "Мой блог" */
 
 .rectangle {
     width: 35px;
     height: 35px;
+    margin-right: 11px;
     background: #4b5563;
     display: flex;
     align-items: center;
@@ -62,12 +74,59 @@ header {
     line-height: 1;
 }
 
+
+
+
+/* Меню делаем flex + убираем стандартные gap/margin/padding */
 .menu {
     display: flex;
-    gap: 32px;
-    /* расстояние между пунктами меню */
     list-style: none;
+    margin: 0;
+    padding: 0;
+    
 }
+
+
+/* .menu {
+    display: flex;
+    gap: 32px; */
+    /* расстояние между пунктами меню */
+    /* list-style: none;
+} */
+
+
+.menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.menu li:nth-child(1) {
+    /* "Мой блог" */
+    margin-right: 77px;
+}
+
+.menu li:nth-child(2) {
+    /* "HTML и CSS" */
+    margin-right: 52px;
+}
+
+.menu li:nth-child(3) {
+    /* "Frontend" */
+    margin-right: 39px;
+}
+
+.menu li:nth-child(4) {
+    /* "Backend" */
+    /* после последнего пункта отдельный блок, ничего не нужно */
+}
+
+/* Отступ между меню и поиском */
+.menu {
+    /* ничего не нужно — можем добавить margin-right у пункта Backend или у блока поиска */
+}
+
+
+
 
 .menu a {
     text-decoration: none;
@@ -76,6 +135,8 @@ header {
     font-size: 18px;
     line-height: 24px;
     transition: color 0.2s;
+    white-space: nowrap;
+    /* запретить перенос строк внутри пункта */
 }
 
 .menu a:hover {
@@ -87,6 +148,48 @@ main {
     margin: 48px 0;
     /* отступы сверху и снизу между header и footer */
 }
+
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    background: #1f2937;
+    /* фон, подбери по макету */
+    border-radius: 100px;
+    /* скругление — можно изменить */
+    padding: 4px 12px;
+    /* внутренние отступы */
+    width: 224px;
+    height: 40px;
+    /* высота поля поиска */
+    gap: 8px;
+    /* отступ между лупой и полем */
+    margin-left: 346px;
+}
+
+.search-icon {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    /* чтобы иконка не сжималась */
+}
+
+.search-input {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    width: 160px;
+    /* ширина поля поиска — можешь подобрать по макету */
+}
+
+.search-input::placeholder {
+    color: #6b7280;
+    /* цвет плейсхолдера */
+}
+
+
 
 .bottom-block {
     width: 100%;
