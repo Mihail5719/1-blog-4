@@ -22,13 +22,14 @@ body {
 }
 
 .top-block {
+    
+    
     width: 100%;
     min-height: 1516px;
     background: linear-gradient(180deg, #374151 0%, #111827 100%);
-    
-    
     /* цвет верхнего блока из макета */
-}
+    }
+
 header {
     margin-top: 81px;
     /* пространство над шапкой, меняй по макету */
@@ -189,7 +190,107 @@ main {
     /* цвет плейсхолдера */
 }
 
+.article-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* выравнивание содержимого по центру */
+    /* margin-top: 0px; */
+    /* если именно такой отступ сверху нужен */
+}
 
+.frame-2 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 180px;
+    /* фиксированная ширина, как на макете */
+    justify-content: center;
+}
+
+    .frontend-label {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 100%;
+    color: #FFFFFF;
+    letter-spacing: 0%;
+    opacity: 0.6;
+}
+
+    .divider-dot {
+    width: 4px;
+    height: 4px;
+    background: #FFFFFF;
+    border-radius: 100%;
+    display: inline-block;
+    opacity: 0.6;
+}
+
+    .post-date {
+    font-size: 14px;
+    color: #FFFFFF;
+    white-space: nowrap;
+    opacity: 0.6;
+}
+
+.page-title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38px;
+    color: #FFFFFF;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+
+/* Блок "автор" по горизонтали внутри top-block */
+.author-block {
+    display: flex;
+    align-items: center;
+    /* вертикально аватар и инфо выровнены по середине */
+    gap: 16px;
+    /* расстояние между аватаром и текстом, подбери по макету */
+    justify-content: center;
+}
+
+
+/* Аватар */
+.author-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Имя и роль в одной колонке */
+.author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Имя */
+.author-name {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 28px;
+}
+
+/* Роль */
+.author-role {
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 28px;
+    margin-top: 0px;
+    /* чуть больше отступа, если нужно */
+    opacity: 0.6;
+}
+
+.main-slaid {
+    display: block;
+    margin: 0 auto;
+}
 
 .bottom-block {
     width: 100%;
