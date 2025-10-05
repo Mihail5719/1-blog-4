@@ -1,0 +1,375 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #111827;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.wrapper {
+    max-width: 1440px;
+    /* можешь изменить под свой макет */
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #111827;
+}
+
+.top-block {
+    
+    
+    width: 100%;
+    min-height: 1516px;
+    background: linear-gradient(180deg, #374151 0%, #111827 100%);
+    /* цвет верхнего блока из макета */
+    }
+
+header {
+    margin-top: 81px;
+    /* пространство над шапкой, меняй по макету */
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    padding-left: 180px;
+    padding-right: 180px;
+}
+
+
+
+
+/* .header-row {
+    display: flex;
+    align-items: center;
+    gap: 11px; */
+    /* расстояние между логотипом и меню */
+    /* padding-left: 180px;
+    justify-content: space-between;
+} */
+
+/* Отступ между прямоугольником и "Мой блог" */
+
+.rectangle {
+    width: 35px;
+    height: 35px;
+    margin-right: 11px;
+    background: #4b5563;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.rectangle .letter {
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1;
+}
+
+
+
+
+/* Меню делаем flex + убираем стандартные gap/margin/padding */
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+/* .menu {
+    display: flex;
+    gap: 32px; */
+    /* расстояние между пунктами меню */
+    /* list-style: none;
+} */
+
+
+.menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.menu li:nth-child(1) {
+    /* "Мой блог" */
+    margin-right: 77px;
+}
+
+.menu li:nth-child(2) {
+    /* "HTML и CSS" */
+    margin-right: 52px;
+}
+
+.menu li:nth-child(3) {
+    /* "Frontend" */
+    margin-right: 39px;
+}
+
+.menu li:nth-child(4) {
+    /* "Backend" */
+    /* после последнего пункта отдельный блок, ничего не нужно */
+}
+
+/* Отступ между меню и поиском */
+.menu {
+    /* ничего не нужно — можем добавить margin-right у пункта Backend или у блока поиска */
+}
+
+
+
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    transition: color 0.2s;
+    white-space: nowrap;
+    /* запретить перенос строк внутри пункта */
+}
+
+.menu a:hover {
+    color: #ffef75;
+}
+
+main {
+    flex: 1 0 auto;
+    margin: 48px 0;
+    /* отступы сверху и снизу между header и footer */
+}
+
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    background: #1f2937;
+    /* фон, подбери по макету */
+    border-radius: 100px;
+    /* скругление — можно изменить */
+    padding: 4px 12px;
+    /* внутренние отступы */
+    width: 224px;
+    height: 40px;
+    /* высота поля поиска */
+    gap: 8px;
+    /* отступ между лупой и полем */
+    margin-left: 346px;
+}
+
+.search-icon {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    /* чтобы иконка не сжималась */
+    opacity: 10%;
+}
+
+.search-input {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    width: 160px;
+    /* ширина поля поиска — можешь подобрать по макету */
+}
+
+.search-input::placeholder {
+    color: #6b7280;
+    /* цвет плейсхолдера */
+}
+
+.article-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* выравнивание содержимого по центру */
+    margin-top: 59px;
+    /* если именно такой отступ сверху нужен */
+}
+
+.frame-2 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 180px;
+    /* фиксированная ширина, как на макете */
+    justify-content: center;
+}
+
+    .frontend-label {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 100%;
+    color: #FFFFFF;
+    letter-spacing: 0%;
+    opacity: 0.6;
+}
+
+    .divider-dot {
+    width: 4px;
+    height: 4px;
+    background: #FFFFFF;
+    border-radius: 100%;
+    display: inline-block;
+    opacity: 0.6;
+}
+
+    .post-date {
+    font-size: 14px;
+    color: #FFFFFF;
+    white-space: nowrap;
+    opacity: 0.6;
+}
+
+.page-title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38px;
+    color: #FFFFFF;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 14px;
+}
+
+
+/* Блок "автор" по горизонтали внутри top-block */
+.author-block {
+    display: flex;
+    align-items: center;
+    /* вертикально аватар и инфо выровнены по середине */
+    gap: 16px;
+    /* расстояние между аватаром и текстом, подбери по макету */
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+/* Аватар */
+.author-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Имя и роль в одной колонке */
+.author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Имя */
+.author-name {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 28px;
+}
+
+/* Роль */
+.author-role {
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 28px;
+    margin-top: 0px;
+    /* чуть больше отступа, если нужно */
+    opacity: 0.6;
+}
+
+.main-slaid {
+    display: block;
+    margin: 0 auto;
+    margin-top: 28px;
+}
+
+.article-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    /* Подбери под макет, какой нужен отступ между текстами */
+}
+
+/* Верхний блок - отступ слева 367, справа 365 */
+.color-text {
+    margin-left: 367px;
+    margin-right: 365px;
+    text-align: left;
+    
+    font-size: 20px;
+    line-height: 32px;
+    
+    /* font-size: 18px;
+    line-height: 28px; */
+    color: #fff;
+    margin-top: 69px;
+}
+
+/* Нижний блок - отступ слева и справа 366 */
+.answer-text {
+    margin-left: 366px;
+    margin-right: 366px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    color: #fff;
+    
+    
+    
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+
+
+
+.bottom-block {
+    width: 100%;
+    min-height: 319px;
+    background: #1f2937;
+    /* цвет нижнего блока из макета */
+}
+
+.bottom-block__content {
+    margin-left: 366px;
+    margin-right: 366px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    color: #fff;
+    margin-bottom: 103px;
+    
+}
+
+
+
+
+footer {
+    margin-top: 24px;
+    margin-left: 608px;
+    margin-right: 606px;
+    padding: 20px 0;
+    text-align: center;
+    background: #1f2937;
+    font-size: 16px;
+    opacity: 60%;
+    color: #FFFFFF;
+    margin-top: 77px;
+}
